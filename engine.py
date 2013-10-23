@@ -1,3 +1,5 @@
+# Functions for PHS Adventure.
+
 def get_choice(choices):
     # This function takes in a dictionary of choices,
     #   and returns the user's choice.
