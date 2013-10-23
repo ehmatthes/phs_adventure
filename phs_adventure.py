@@ -1,30 +1,9 @@
 import os
 import sys
+import engine
 
 # Overall approach: show a message, then show choices,
 #   then respond to choices
-
-def get_choice(choices):
-    # This function takes in a dictionary of choices,
-    #   and returns the user's choice.
-    # The dictionary has the form:
-    #   {'choice_token': 'choice text', }
-    # The function forces the user to make one of the given choices,
-    #   or quit.
-    print("\nWould you like to: ")
-    for choice_token in choices:
-        print("[%s]: %s" % (choice_token, choices[choice_token]))
-    # Always offer the choice to quit.
-    print("[q]: Quit.")
-    choice_token = ''
-    while choice_token not in choices.keys():
-        choice_token = input("\nWhat is your choice? ")
-        choice_token = str(choice_token)
-        if choice_token == 'q':
-            print("Thanks for playing! Bye.")
-            sys.exit()
-    return choice_token
-
 
 # Start the adventure.
 message = "You are standing at the entrance to the new Pacific High School."
@@ -34,7 +13,7 @@ choices['1'] = "Enter."
 choices['2'] = "Turn around and jump into the water."
 
 print(message)
-choice = get_choice(choices)
+choice = engine.get_choice(choices)
 
 
 # Respond to first choice.
