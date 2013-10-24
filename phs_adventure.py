@@ -42,8 +42,17 @@ while 1:
         print("[3] Go into Eric's class to do some Python.")
         choice = input("\nWhat is your choice? ")
         if choice == '1':
-    	    os.system('clear')
-    	    print("A British-sounding woman has just shouted at you.")
+            os.system('clear')
+        
+            key = ''
+            while key.lower() != 'british':
+                os.system('clear')
+                print("\nNot so fast!")
+                key = input("What accent are you likely to hear in a moment?")
+        
+            # You know the secret!
+            os.system('clear')
+            print("A British-sounding woman has just shouted at you.")
         elif choice == '2':
     	    # phil's desk
     	    os.system('clear')
