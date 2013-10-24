@@ -49,11 +49,11 @@ while 1:
 		    print("I don't understand.")
     elif choice == '2':
         os.system('clear')
-	    print("You drowned! Just kidding.")
-	    print("You are now riding a dolphin.")
-	    print("Would you like to: ")
-	    print("\n[1] Head towards the magical underwater kingdom of Zubida.")
-	    print("\n[2] Head towards a magical land far, far away from here.")
-	    choice = input("\nWhat is your choice? ")
+        print("You drowned! Just kidding.")
+        print("You are now riding a dolphin.")
+        print("Would you like to: ")
+        print("\n[1] Head towards the magical underwater kingdom of Zubida.")
+        print("\n[2] Head towards a magical land far, far away from here.")
+        choice = input("\nWhat is your choice? ")
     else:
-	    print("I don't understand your choice.")
+        print("I don't understand your choice.")
