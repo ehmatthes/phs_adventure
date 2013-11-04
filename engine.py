@@ -1,3 +1,5 @@
+import sys
+
 # Functions for PHS Adventure.
 
 def get_choice(choices):
